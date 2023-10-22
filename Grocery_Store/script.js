@@ -29,25 +29,24 @@ window.onscroll=()=>{
     loginForm.classList.remove('active');
 }
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+var swiper = new Swiper(".review_card", {
+  loop:true,
+  // slidesPerView:4,
+  centeredSlides: true,
+  autoplay:{
+    delay:5000,
+    DisableOnInteraction:false,
   },
   breakpoints: {
-    640: {
+    0: {
       slidesPerView: 1,
-
     },
     768: {
       slidesPerView: 2,
-
     },
     1024: {
-      slidesPerView: 4,
-
+      slidesPerView: 3,
     },
   },
 });
+
